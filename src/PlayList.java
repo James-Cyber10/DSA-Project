@@ -63,6 +63,20 @@
       }
       return null;   
    }         
+   
+  public boolean isRepeatingPlaylist() {
+                Song slow = this.nextSong;
+                Song fast = slow == null ? null : slow.nextSong;
+                while (fast != null) {
+                    if (slow == this || slow == fast)
+                        return true;
+                    slow = slow.nextSong;
+                    fast = fast.nextSong;
+                    if (fast != null)
+                        fast = fast.nextSong;
+                }
+                return false;
+            }
 
    public void print() {
       String result = "NumSongs = " + count
