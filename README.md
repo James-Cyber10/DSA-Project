@@ -17,7 +17,7 @@ add/remove tracks as necessary;
 exit 
 end
 
-# **CREATING THE PLAYLIST**
+**CREATING THE PLAYLIST**
 
 function create_playlist()	// function for creating the playlist 
 tracks := 100; 
@@ -28,7 +28,7 @@ end for;
 return linked_list ;
 end function;		//create playlist function ends
 
-# **PLAY TRACK**
+**PLAY TRACK**
 
 function play_track(linked_list, track_number); 
 current_track := linked_list.head ;
@@ -38,7 +38,7 @@ end for ;
 play_audio(current_track.data); 
 end function;
 
-# **ADDING TRACK**
+**ADDING TRACK**
 
 function add_track(linked_list, track_number);
 new_track := create_new_track(track_number); 
@@ -53,7 +53,7 @@ current_track.next := new_track;
 end if ;
 end function;
 
-# **REMOVE TRACK**
+**REMOVE TRACK**
 
 function remove_track(linked_list, track_number);
 current_track := linked_list.head;
@@ -69,7 +69,7 @@ previous_track.next := current_track.next;
 end if 
 end function
 
-# **SEARCH TRACK**
+**SEARCH TRACK**
 
 function search_playlist(linked_list, track_number);
 current_track := linked_list.head;
