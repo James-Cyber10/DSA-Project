@@ -1,4 +1,5 @@
 Psuedocode of the music player is as follows:
+
 initialize music player; 
 initialize playlist;
 initialize tracklist; 
